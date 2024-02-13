@@ -1,0 +1,12 @@
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: var(--color-second)
+}
+
+.footer p {
+  font-size: var(--font-normal);
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+/* Main */
+.main {}
+
+section {}
+
+section .content__flex {
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+section article {
+  padding: 20px;
+  margin-right: 2%;
+  flex-basis: 63%;
+  background-color: var(--white-hsla);
+  border: 1px solid var(--gray-var)
+}
+
+section article h2 {
+  margin-bottom: 12px;
+  color: var(--color-second);
+  display: flex;
+  align-items: center;
+}
+
+section article h2 .bx {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  font-size: var(--font-big);
+}
+
+section article p,
+section figure p {
+  font-size: var(--font-normal);
+  line-height: 2
+}
+
+section figure {
+  padding: 20px;
+  flex-basis: 35%;
+  background-color: var(--white-hsla);
+}
+
+section figure p {
+  margin-top: 12px;
+  text-align: center;
+}
+
+section .content__flex:last-child {
+  flex-direction: row-reverse;
+}
+section .content__flex:last-child article {
+  margin-right: 0;
+  margin-left: 2%;
+}

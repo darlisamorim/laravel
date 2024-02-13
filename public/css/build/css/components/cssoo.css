@@ -1,0 +1,138 @@
+/* All Variables */
+:root {
+
+	/* Colors Options
+		https://coolors.co/
+		#0E96E5;	#4fb788;	#b11e36;	#581a99;	#feb969;
+		#7e8035;	#2f0aab;	#292929;	#3e3e3e;	#565656;
+		#eeeeee;	#f3f3f3;	#FFFFFF;	#000000;
+	*/
+
+	/* Color Base Default */
+	--black: hsl(0, 0%, 0%);
+	--black-hsla: hsla(0, 0%, 0%, .7); /* Black Transparent */
+
+	--white: hsl(0, 0%, 100%);
+	--white-hsla: hsla(0, 0%, 100%, .7); /* White Transparent */
+
+	--gray: hsl(0, 0%, 16%);
+	--gray-hsla: hsla(0, 0%, 16%, .7);
+	--gray-var: hsl(0, 0%, 95%);
+
+
+	/* Color Main */
+	--color-first-hue: 350;
+	--color-first-hsla: 1;
+	--color-first: hsla(var(--color-first-hue), 71%, 41%, var(--color-first-hsla));
+
+	/* Second Main */
+	--color-second-hue: 350;
+	--color-second-hsla: 1;
+	--color-second: hsla(var(--color-second-hue), 71%, 28%, var(--color-second-hsla));
+
+
+	/* Color Gradients */
+	/* --$gradient-red: linear-gradient(90deg, rgba(217, 0, 48, 1) 5%, rgba(171, 50, 76, 1) 89%); */
+
+
+	/* Start */
+	--fz: 0em !important;
+	--mz: 0;
+	--pz: 0;
+	--dn: none;
+	--font-name: 'Open Sans', sans-serif;
+
+	/* Convert Size -> ( px ) to ( em ) {N / 16} = Result */
+	--font-mini: .525em;	/* 8.4px */
+	--font-normal: .875em;		/* 14px */
+	--font-smaller: 1em;	/* 16px */
+	--font-small: 1.375em;	/* 22px */
+	--font-big: 1.75em;		/* 28px */
+	--font-big-smaller: 2.25em;	/* 36px */
+	--font-big-small: 2.75em;		/* 44px */
+
+	/* Negrito */
+	--weight-mini: 400;
+	--weight-medium: 600;
+	--weight-bolder: 700;
+	--weight-bold: 900;
+
+	/* Contents */
+	--container-with: 100%;
+	--content-max-width: 1600px;
+	/* --content-max-width: 1366px; */
+	--content-width: 90%;
+
+	/* Border Radius */
+	--radius: 6px;
+	--radius-50: 50%;
+
+	/* Box Shadow */
+	--box-shadow: 0 0px 3px 0px var(--black-hsla);
+
+	/* Text Shadow */
+  --text-shadow: 1.4px 2px 0px var(--black);
+
+	/* Transition */
+	--transition: all 280ms ease-in-out;
+
+	/* Rotate */
+	--rotate: rotate(-5deg);
+
+	/* Scale */
+	--scale: scale(1.6);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-name);
+	font-size: var(--font-normal);
+	background-color: var(--gray-var);
+}
+
+h1, h2, h3, h4 {
+	color: var(--black);
+	font-weight: var(--weight-medium);
+	margin: var(--mz);
+}
+h1 { font-size: var(--font-big-smaller); }
+h2 { font-size: var(--font-big); }
+
+section {
+	padding: 60px 0;
+}
+
+/* Container's Block */
+.container {
+	width: var(--container-with);
+	display: block;
+}
+.content {
+	width: var(--content-width);
+	max-width: var(--content-max-width);
+	display: block;
+	margin: 0 auto;
+}
+
+/* Container's Flex */
+.container__flex {
+	width: var(--container-with);
+	display: flex;
+	flex-wrap: wrap;
+}
+.content__flex {
+	width: var(--content-width);
+	max-width: var(--content-max-width);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.fz {
+	font-size: var(--fz);
+	padding: var(--pz);
+	margin: var(--mz);
+}
