@@ -24,17 +24,17 @@
                   <tr>
                   <th>Nome: </th>
                   <th>Valor: </th>
-                  <th>Ações</th>
+                  <th>Ações: </th>
                   </tr>
             </thead>
-            <tbody>`
+            <tbody>
                   @foreach ($findProducts as $prods)
                         <tr>
                               <td>{{ $prods->name }}</td>
                               <td>{{ 'R$' . ' ' . number_format($prods->valor, 2, ',', '.') }}</td>
                               <td>
-                                    <a href="" class="btn btn-sm btn-secondary">Edit</a>    
-                                    <a href="" class="btn btn-sm btn-danger">Remove</a>      
+                                    <a href="{{ route('produto.delete') }}" class="btn btn-sm btn-secondary">Edit</a>    
+                                    <a onclick="deleteRegistroPaginacao('{{ route('produto.delete') }}', {{ $prods->id }} )" class="btn btn-sm btn-danger">Remove</a>      
                               </td>
                         </tr>
                   @endforeach
@@ -42,4 +42,4 @@
             </table>
             </div> 
       </div>
-@endsection§
+@endsection

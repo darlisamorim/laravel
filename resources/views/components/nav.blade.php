@@ -8,30 +8,36 @@
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{ route('dashboard.index') }}">
                   <svg class="bi"><use xlink:href="#house-fill"/></svg>
                   Dashboard
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi"><use xlink:href="#file-earmark"/></svg>
                   Vendas
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="{{ route('produto.index') }}">
                   <svg class="bi"><use xlink:href="#cart"/></svg>
                   Produtos
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi"><use xlink:href="#people"/></svg>
                   Clientes
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="{{ route('users.users') }}">
+                  <svg class="bi"><use xlink:href="#people"/></svg>
+                  Usuários
+                </a>
+              </li>
+              {{-- <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi"><use xlink:href="#graph-up"/></svg>
                   Relatórios
@@ -42,7 +48,7 @@
                   <svg class="bi"><use xlink:href="#puzzle"/></svg>
                   Integrações
                 </a>
-              </li>
+              </li> --}}
             </ul>
       
             {{-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
@@ -84,13 +90,13 @@
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
-                  Settings
+                  Configurações
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                  Sign out
+                  Sair
                 </a>
               </li>
             </ul>
